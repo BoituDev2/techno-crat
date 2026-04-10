@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Technvst | Monthly Broadcast – December 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="pattern-bg"></div>
+<button class="back-to-top" id="backToTopBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<div class="container">
+  <!-- Navbar -->
+  <nav class="navbar" id="mainNavbar">
+    <a href="index.html" class="logo"><i class="fas fa-microchip"></i> TECHNVST</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="benefits.html">Microsoft Benefits</a></li>
+      <li class="dropdown"><a href="#" class="active">Events & More <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="events.html">Events/Webinars</a></li>
+          <li><a href="events.html">Knowledge Hub</a></li>
+          <li><a href="monthly_broadcasts.html" class="active">Monthly Broadcasts</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="nav-register-btn" id="navRegisterBtn"><i class="fas fa-user-plus"></i> Register</button></li>
+    </ul>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-close-btn" id="mobileCloseBtn"><i class="fas fa-times"></i></div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="benefits.html">Microsoft Benefits</a></li>
+      <li><div class="mobile-dropdown-toggle" id="mobileDropdownToggle"><span>Events & More</span><i class="fas fa-chevron-down"></i></div>
+        <ul class="mobile-submenu" id="mobileSubmenu">
+          <li><a href="events.html">Events/Webinars</a></li>
+          <li><a href="events.html">Knowledge Hub</a></li>
+          <li><a href="monthly_broadcasts.html">Monthly Broadcasts</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="mobile-register-btn" id="mobileRegisterBtn">Register Now</button>
+  </div>
+
+  <!-- Hero Video Section -->
+  <div style="position: relative; border-radius: 2rem; overflow: hidden; margin: 30px 0 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+    <video class="hero-video" autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+      <source src="https://technvst.com/wp-content/uploads/2025/11/Untitled-design.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Main Broadcast Content -->
+  <section style="margin: 40px 0;">
+    <div class="glass-card" style="padding: 2rem;">
+      <h2>Upcoming Events, Key Highlights, Partner Insights & Resources</h2>
+      <div class="grid-2">
+        <div class="content-card" style="background: rgba(10, 12, 18, 0.7); backdrop-filter: blur(8px); border-radius: 1.5rem; padding: 1.5rem; border: 1px solid rgba(0, 255, 200, 0.2); transition: all 0.3s;">
+          <i class="fas fa-microchip" style="font-size: 2rem; color: #00ffc3; margin-bottom: 1rem; display: inline-block;"></i>
+          <h3>Share Your GPU and AI Requirements</h3>
+          <p>Share your GPU requirements, AI and technical support needs, cloud setup, or investment priorities so we can provide the right guidance, tools, and resources to help your solutions thrive.</p>
+          <button class="btn-outline" style="margin-top: 1rem;" id="gpuBtn">Share Requirements →</button>
+        </div>
+        <div class="content-card" style="background: rgba(10, 12, 18, 0.7); backdrop-filter: blur(8px); border-radius: 1.5rem; padding: 1.5rem; border: 1px solid rgba(0, 255, 200, 0.2); transition: all 0.3s;">
+          <i class="fas fa-file-contract" style="font-size: 2rem; color: #00ffc3; margin-bottom: 1rem; display: inline-block;"></i>
+          <h3>Turning Contract Promises into Business Value</h3>
+          <p>Contracts are the backbone of every organization. Yet, research shows that companies lose up to 9% of annual revenue due to poor contract management. Founded in 2020, Contract Corridor is addressing this challenge with its flagship solution.</p>
+          <button class="btn-outline" style="margin-top: 1rem;">Learn More →</button>
+        </div>
+        <div class="content-card" style="background: rgba(10, 12, 18, 0.7); backdrop-filter: blur(8px); border-radius: 1.5rem; padding: 1.5rem; border: 1px solid rgba(0, 255, 200, 0.2); transition: all 0.3s;">
+          <i class="fas fa-gamepad" style="font-size: 2rem; color: #00ffc3; margin-bottom: 1rem; display: inline-block;"></i>
+          <h3>Exciting News from Games Week Cape Town</h3>
+          <p>We are honored to have joined Microsoft at the Xbox Africa Games Week in Cape Town — what an amazing experience! Africa Games Week 2025 brought together innovators, creators, and game enthusiasts from across Africa.</p>
+          <button class="btn-outline" style="margin-top: 1rem;">View Recap →</button>
+        </div>
+        <div class="content-card" style="background: rgba(10, 12, 18, 0.7); backdrop-filter: blur(8px); border-radius: 1.5rem; padding: 1.5rem; border: 1px solid rgba(0, 255, 200, 0.2); transition: all 0.3s;">
+          <i class="fab fa-microsoft" style="font-size: 2rem; color: #00ffc3; margin-bottom: 1rem; display: inline-block;"></i>
+          <h3>Apply for Microsoft Credits</h3>
+          <p>The Microsoft for Startups $5,000 Credit Offer is designed for early-stage startups that want to explore Azure services. Start with $1,000 in initial credits, and after business verification, unlock an additional $4,000.</p>
+          <button class="btn-primary" style="margin-top: 1rem;">Apply Now →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section style="margin: 40px 0;">
+    <div style="background: linear-gradient(135deg, rgba(0,255,200,0.1), rgba(0,0,0,0.4)); border-radius: 2rem; padding: 2rem; text-align: center; border: 1px solid rgba(0,255,200,0.3);">
+      <i class="fas fa-users" style="font-size: 3rem; color: #e9c46a; margin-bottom: 1rem; display: inline-block;"></i>
+      <h2>Why Join the TechNvst Community?</h2>
+      <div class="grid-2" style="margin-top: 1.5rem; text-align: left;">
+        <div>
+          <p><i class="fas fa-check-circle" style="color:#00ffc3;"></i> <strong>Stay Ahead with Exclusive Resources:</strong> Access recorded webinars, workshops, and resources from past events through our Learning Hub.</p>
+          <p style="margin-top: 1rem;"><i class="fas fa-check-circle" style="color:#00ffc3;"></i> <strong>Connect with Like-Minded Innovators:</strong> Our community Switch provides a platform to engage with other developers, founders, and tech enthusiasts.</p>
+        </div>
+        <div>
+          <p><i class="fas fa-check-circle" style="color:#00ffc3;"></i> <strong>Discover New Opportunities:</strong> Be the first to know about upcoming events, hands-on workshops, and tools that can take your projects to the next level.</p>
+          <p style="margin-top: 1rem;"><i class="fas fa-check-circle" style="color:#00ffc3;"></i> <strong>Grow Your Skills:</strong> From beginner tips to advanced workflows, the Learning Hub and community discussions are a space to continuously sharpen your skills.</p>
+        </div>
+      </div>
+      <button class="btn-primary" style="margin-top: 2rem;" id="joinCommunityBtn"><i class="fas fa-rocket"></i> Join the TechNvst Community Today!</button>
+    </div>
+  </section>
+
+  <!-- Past Broadcasts Archive -->
+  <section style="margin: 60px 0;">
+    <h2>Explore Past Monthly Broadcasts</h2>
+    <div class="grid-3" id="pastBroadcastsGrid"></div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><div class="logo" style="font-size:1.8rem; display:inline-block;">TECHNVST</div><p class="footer-description" style="margin-top:1rem;">AI-powered ecosystem connecting African startups to markets, capital, and growth.</p></div>
+      <div class="footer-col"><h3>Quick Links</h3><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="benefits.html">Microsoft Benefits</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h3>Resources</h3><ul class="footer-links"><li><a href="events.html">Events/Webinars</a></li><li><a href="events.html">Knowledge Hub</a></li><li><a href="monthly_broadcasts.html">Monthly Broadcasts</a></li></ul></div>
+      <div class="footer-col"><h3>Connect</h3><div class="social-links"><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></div><p style="margin-top:1rem;"><i class="fas fa-envelope"></i> hello@technvst.com</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Technvst. All rights reserved. Empowering African innovation.</p></div>
+  </div>
+</footer>
+
+<script>
+  // Past Broadcasts Data
+  const pastBroadcasts = [
+    { title: "MONTHLY BROADCAST NOVEMBER 2025", desc: "Special broadcast: biggest opportunities in innovation, disruption, and transformation across Africa.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Nov+2025", date: "Nov 2025" },
+    { title: "MONTHLY BROADCAST OCTOBER 2025", desc: "AI transformation stories, Microsoft Founders Hub updates, and partner highlights.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Oct+2025", date: "Oct 2025" },
+    { title: "MONTHLY BROADCAST SEPTEMBER 2025", desc: "Deep dive into generative AI, enterprise adoption, and startup scaling.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Sep+2025", date: "Sep 2025" },
+    { title: "MONTHLY BROADCAST AUGUST 2025", desc: "Key insights from African tech ecosystem and community launch preview.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Aug+2025", date: "Aug 2025" },
+    { title: "MONTHLY BROADCAST JULY 2025", desc: "Microsoft Azure updates, startup success stories, and upcoming events.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Jul+2025", date: "Jul 2025" },
+    { title: "MONTHLY BROADCAST JUNE 2025", desc: "TechNvst Community launch and founder spotlights.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Jun+2025", date: "Jun 2025" }
+  ];
+
+  function renderPastBroadcasts() {
+    const container = document.getElementById('pastBroadcastsGrid');
+    if (container) {
+      container.innerHTML = pastBroadcasts.map(b => `
+        <div class="broadcast-archive-card" style="background: rgba(10, 12, 18, 0.7); border-radius: 1.5rem; overflow: hidden; border: 1px solid rgba(0, 255, 200, 0.2); transition: all 0.3s;">
+          <img class="archive-img" src="${b.img}" alt="${b.title}" style="width: 100%; height: 160px; object-fit: cover;">
+          <div class="archive-content" style="padding: 1rem;">
+            <h3>${b.title}</h3>
+            <p style="color:#e9c46a; font-size:0.8rem;"><i class="far fa-calendar-alt"></i> ${b.date}</p>
+            <p style="color:#b0b0c0; font-size:0.85rem;">${b.desc}</p>
+            <button class="btn-outline watch-replay" style="margin-top: 1rem; width:100%;">Watch Replay →</button>
+          </div>
+        </div>
+      `).join('');
+      document.querySelectorAll('.watch-replay').forEach(btn => btn.addEventListener('click', () => {
+        const toast = document.getElementById('toastMsg');
+        if (toast) toast.remove();
+        showToast('📺 Replay available soon. Subscribe for updates!');
+      }));
+    }
+  }
+
+  // Toast notification function
+  function showToast(msg) {
+    let toast = document.getElementById('toastMsg');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'toastMsg';
+      toast.className = 'glass-card';
+      toast.style.position = 'fixed';
+      toast.style.bottom = '20px';
+      toast.style.right = '20px';
+      toast.style.padding = '12px 20px';
+      toast.style.zIndex = '10000';
+      toast.style.borderLeft = '4px solid #00ffc3';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = `<i class="fas fa-info-circle"></i> ${msg}`;
+    toast.style.display = 'block';
+    setTimeout(() => toast.style.display = 'none', 4000);
+  }
+
+  // Initialize page
+  renderPastBroadcasts();
+
+  // GPU Button
+  const gpuBtn = document.getElementById('gpuBtn');
+  if (gpuBtn) {
+    gpuBtn.addEventListener('click', () => showToast('📋 Thank you! Our team will reach out to discuss your GPU/AI requirements.'));
+  }
+
+  // Join Community Button
+  const joinCommunityBtn = document.getElementById('joinCommunityBtn');
+  if (joinCommunityBtn) {
+    joinCommunityBtn.addEventListener('click', () => showToast('🎉 Welcome! Community access opens soon. Stay tuned for exclusive resources.'));
+  }
+
+  // Other content card buttons
+  document.querySelectorAll('.content-card .btn-outline, .content-card .btn-primary').forEach(btn => {
+    if (btn.id !== 'gpuBtn' && btn.id !== 'joinCommunityBtn') {
+      btn.addEventListener('click', () => showToast('🔗 More details coming soon. Subscribe to our newsletter!'));
+    }
+  });
+
+  // Video autoplay handling
+  const heroVideo = document.querySelector('.hero-video');
+  if (heroVideo) {
+    heroVideo.play().catch(e => console.log('Video autoplay prevented:', e));
+  }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

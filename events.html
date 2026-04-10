@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Technvst | Knowledge Hub – Events, Webinars & Insights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="pattern-bg"></div>
+<button class="back-to-top" id="backToTopBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<div class="container">
+  <!-- Navbar -->
+  <nav class="navbar" id="mainNavbar">
+    <a href="index.html" class="logo"><i class="fas fa-microchip"></i> TECHNVST</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="benefits.html">Microsoft Benefits</a></li>
+      <li class="dropdown"><a href="#" class="active">Events & More <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="events.html" class="active">Events/Webinars</a></li>
+          <li><a href="events.html">Knowledge Hub</a></li>
+          <li><a href="monthly_broadcasts.html">Monthly Broadcasts</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="nav-register-btn" id="navRegisterBtn"><i class="fas fa-user-plus"></i> Register</button></li>
+    </ul>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-close-btn" id="mobileCloseBtn"><i class="fas fa-times"></i></div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="benefits.html">Microsoft Benefits</a></li>
+      <li><div class="mobile-dropdown-toggle" id="mobileDropdownToggle"><span>Events & More</span><i class="fas fa-chevron-down"></i></div>
+        <ul class="mobile-submenu" id="mobileSubmenu">
+          <li><a href="events.html">Events/Webinars</a></li>
+          <li><a href="events.html">Knowledge Hub</a></li>
+          <li><a href="monthly_broadcasts.html">Monthly Broadcasts</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="mobile-register-btn" id="mobileRegisterBtn">Register Now</button>
+  </div>
+
+  <!-- Hero Section -->
+  <section style="margin: 40px 0 20px;">
+    <img src="https://technvst.com/wp-content/uploads/2025/07/Webinars-and-Events.png" alt="Knowledge Hub Hero" style="width:100%; border-radius: 2rem; margin-bottom: 1.5rem;">
+    <p class="glass-card" style="padding: 1.8rem; font-size: 1.1rem; text-align: center;">The Knowledge Hub is your go-to source for insights, innovations, and opportunities tailored to keep you informed and engaged. Whether you're looking to sharpen your skills through webinars, stay updated on the latest industry events, or explore cutting-edge developments, the Knowledge Hub has you covered. Subscribe to our updates and never miss out on essential resources, tools, and events that can help you stay at the forefront of your industry. Your journey toward continuous learning and growth starts here.</p>
+  </section>
+
+  <!-- Resources Section (9 cards) -->
+  <section style="margin: 80px 0;">
+    <h2>Resources</h2>
+    <div class="grid-3" id="resourcesGrid"></div>
+  </section>
+
+  <!-- Articles Section -->
+  <section style="margin: 80px 0;">
+    <h2>Articles</h2>
+    <div class="articles-grid" id="articlesGrid" style="display: flex; flex-direction: column; gap: 2rem;"></div>
+  </section>
+
+  <!-- Success Stories -->
+  <section style="margin: 80px 0;">
+    <h2>Success Stories</h2>
+    <div class="grid-3" id="storiesGrid"></div>
+  </section>
+
+  <!-- Past Broadcasts Carousel -->
+  <section style="margin: 80px 0;">
+    <h2>Explore Past Broadcasts</h2>
+    <div class="carousel-container" id="carouselContainer" style="position: relative; overflow-x: auto; scroll-behavior: smooth; white-space: nowrap; padding: 1rem 0; scrollbar-width: thin; cursor: grab;">
+      <div class="carousel-track" id="carouselTrack" style="display: inline-flex; gap: 1.5rem;"></div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><div class="logo" style="font-size:1.8rem; display:inline-block;">TECHNVST</div><p class="footer-description" style="margin-top:1rem;">AI-powered ecosystem connecting African startups to markets, capital, and growth.</p></div>
+      <div class="footer-col"><h3>Quick Links</h3><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="benefits.html">Microsoft Benefits</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h3>Resources</h3><ul class="footer-links"><li><a href="events.html">Events/Webinars</a></li><li><a href="events.html">Knowledge Hub</a></li><li><a href="monthly_broadcasts.html">Monthly Broadcasts</a></li></ul></div>
+      <div class="footer-col"><h3>Connect</h3><div class="social-links"><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></div><p style="margin-top:1rem;"><i class="fas fa-envelope"></i> hello@technvst.com</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Technvst. All rights reserved. Empowering African innovation.</p></div>
+  </div>
+</footer>
+
+<script>
+  // Data for the page (will be populated dynamically)
+  const resourcesData = [
+    { title: "How to Register on Founders Hub", desc: "The Microsoft for Startups $5,000 Credit Offer is designed for early-stage startups that want to explore Azure services and start building AI or cloud-based solutions.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Founders+Hub" },
+    { title: "Azure Logic Apps", desc: "Connect all your services, systems, and data. Drive business process automation and orchestrate AI agents to enhance decision-making.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Azure+Logic+Apps" },
+    { title: "Power your AI transformation", desc: "Microsoft Fabric is an all-in-one data and AI platform that unifies data engineering, data science, analytics, and business intelligence.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Microsoft+Fabric" },
+    { title: "What Is Generative AI?", desc: "Generative AI is revolutionizing industries with its ability to create content, solutions, and insights from diverse inputs.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Generative+AI" },
+    { title: "Transform an Enterprise Data Platform With RAG", desc: "Trillions of PDF files are generated every year, each file consisting of multiple pages filled with various content types.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=RAG+AI" },
+    { title: "What Are Large Language Models Used For?", desc: "Large language models recognize, summarize, translate, predict and generate text and other forms of content.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=LLM" },
+    { title: "NVIDIA AI Platform Delivers Big Gains for LLMs", desc: "NVIDIA is announcing updates to the NeMo framework that provide training speed-ups of up to 30%.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=NVIDIA" },
+    { title: "Enhance Visual Understanding With Generative AI", desc: "Discover breakthrough capabilities of generative AI, large language models, vision language models, and multimodal LLMs.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Visual+AI" },
+    { title: "NVIDIA Enables Trustworthy, Safe, and Secure LLM Systems", desc: "Large language models are incredibly powerful and capable of answering complex questions and performing creative writing.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Secure+LLM" }
+  ];
+  const articlesData = [
+    { title: "Microsoft Learn Goes Open: Introducing the MCP Server for Learn", date: "July 7, 2025", desc: "In a major leap forward for open education and developer empowerment, Microsoft has just released the MCP Server for Learn — a groundbreaking, open-source solution.", img: "https://placehold.co/400x300/0a0a1a/00ffc3?text=Microsoft+Learn" },
+    { title: "Microsoft for Startups Evolves to Better Support Founders at Every Stage", date: "July 4, 2025", desc: "Microsoft for Startups has launched a new, more flexible approach to better support founders at their pace, path, and growth stage.", img: "https://placehold.co/400x300/0a0a1a/00ffc3?text=Startups+Evolve" }
+  ];
+  const successStories = [
+    { title: "Voyage Companion: Transforming Travel Operations", desc: "Building purpose-designed AI infrastructure for multi-day tour operators, driving higher booking conversions.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Voyage" },
+    { title: "Curans: Bridging Medical Education and Real-World Practice", desc: "Revolutionizing medical training with an interactive virtual patient simulator.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Curans" },
+    { title: "Linnaea: AI-Powered Handwriting Recognition for Healthcare", desc: "Transforming operational efficiency for healthcare providers across Africa.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Linnaea" },
+    { title: "Cladfy: Smarter Credit Scoring for Africa's Informal Economy", desc: "Transforming microfinance through data-driven innovation, unlocking financial inclusion.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Cladfy" },
+    { title: "Omnisient: Privacy-Preserving AI Through Data Collaboration", desc: "Ranked among South Africa's top 10 fastest-growing companies.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Omnisient" },
+    { title: "Twiva: Bridging MSMEs and Digitally Skilled Youth", desc: "AI-driven, influencer-powered social commerce platform.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Twiva" },
+    { title: "SimbaGPT: AI-Powered Interactive Billboards", desc: "Cutting-edge AI-powered solution transforming public engagement.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=SimbaGPT" },
+    { title: "Curnance Unleashes AI with Microsoft Azure", desc: "Integration of cutting-edge AI technologies to transform the fintech experience.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Curnance" },
+    { title: "TechNvst & Microsoft Join Forces For Start-Ups", desc: "Collaboration to deliver comprehensive support to start-ups specialising in AI.", img: "https://placehold.co/600x400/0a0a1a/e9c46a?text=Partnership" }
+  ];
+  const broadcasts = [
+    { title: "MONTHLY BROADCAST DECEMBER 2024", desc: "Latest on upcoming events, partner highlights, startup AI success stories.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Dec+2024" },
+    { title: "MONTHLY BROADCAST JANUARY 2025", desc: "Cutting-edge AI tools and community updates.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Jan+2025" },
+    { title: "MONTHLY BROADCAST FEBRUARY 2025", desc: "Updates on events, partner highlights, and startup AI success stories.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Feb+2025" },
+    { title: "MONTHLY BROADCAST MARCH 2025", desc: "Microsoft Founders Hub access and AI transformation stories.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Mar+2025" },
+    { title: "MONTHLY BROADCAST APRIL 2025", desc: "Key insights from African tech ecosystem and startup scaling.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Apr+2025" },
+    { title: "MONTHLY BROADCAST MAY 2025", desc: "Deep dive into generative AI and enterprise adoption.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=May+2025" },
+    { title: "MONTHLY BROADCAST JUNE 2025", desc: "TechNvst Community launch preview and founder spotlights.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Jun+2025" },
+    { title: "MONTHLY BROADCAST NOVEMBER", desc: "Special broadcast: biggest opportunities in innovation across Africa.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Nov+Special" },
+    { title: "MONTHLY BROADCAST DECEMBER", desc: "Year-end review: upcoming events, key highlights, partner milestones.", img: "https://placehold.co/600x400/0a0a1a/00ffc3?text=Dec+Wrap" }
+  ];
+
+  function truncateText(text, maxWords = 22) {
+    let words = text.split(' ');
+    return words.length > maxWords ? words.slice(0, maxWords).join(' ') + '...' : text;
+  }
+
+  function renderResources() {
+    const container = document.getElementById('resourcesGrid');
+    if (container) {
+      container.innerHTML = resourcesData.map(r => `
+        <div class="resource-card" style="background: rgba(10, 12, 18, 0.7); border-radius: 1.5rem; border: 1px solid rgba(0, 255, 200, 0.2); overflow: hidden; transition: all 0.3s;">
+          <img class="card-img" src="${r.img}" alt="${r.title}" style="width: 100%; height: 180px; object-fit: cover;">
+          <div class="card-content" style="padding: 1.2rem;">
+            <h3>${r.title}</h3>
+            <p class="ellipsis" style="color: #b0b0c0; font-size: 0.9rem; margin: 0.5rem 0; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">${truncateText(r.desc, 22)}</p>
+            <span class="read-more find-out-more" style="color: #00ffc3; cursor: pointer; font-weight: 500; display: inline-block; margin-top: 5px;">Find Out More →</span>
+          </div>
+        </div>
+      `).join('');
+      document.querySelectorAll('.find-out-more').forEach(btn => btn.addEventListener('click', () => showToast('📘 More resources available in the full Knowledge Hub.')));
+    }
+  }
+
+  function renderArticles() {
+    const container = document.getElementById('articlesGrid');
+    if (container) {
+      container.innerHTML = articlesData.map(a => `
+        <div class="article-item" style="display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; background: rgba(0,0,0,0.3); border-radius: 1.2rem; padding: 1rem; border: 1px solid rgba(0,255,200,0.15);">
+          <img class="article-img" src="${a.img}" alt="${a.title}" style="width: 100%; height: 140px; object-fit: cover; border-radius: 1rem;">
+          <div>
+            <h3>${a.title}</h3>
+            <div class="article-date" style="color: #e9c46a; font-size: 0.8rem; margin: 0.3rem 0;"><i class="far fa-calendar-alt"></i> ${a.date}</div>
+            <p>${truncateText(a.desc, 30)}</p>
+            <span class="read-more" style="color: #00ffc3; cursor: pointer; font-weight: 500; margin-top: 8px; display: inline-block;">Read full article →</span>
+          </div>
+        </div>
+      `).join('');
+    }
+  }
+
+  function renderStories() {
+    const container = document.getElementById('storiesGrid');
+    if (container) {
+      container.innerHTML = successStories.map(s => `
+        <div class="story-card" style="background: rgba(10, 12, 18, 0.7); border-radius: 1.5rem; border: 1px solid rgba(0, 255, 200, 0.2); overflow: hidden; transition: all 0.3s;">
+          <img class="card-img" src="${s.img}" alt="${s.title}" style="width: 100%; height: 180px; object-fit: cover;">
+          <div class="card-content" style="padding: 1.2rem;">
+            <h3>${s.title}</h3>
+            <p class="ellipsis" style="color: #b0b0c0; font-size: 0.9rem; margin: 0.5rem 0; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">${truncateText(s.desc, 20)}</p>
+            <button class="btn-outline read-story" style="margin-top: 12px; width: 100%;">Read Success Story →</button>
+          </div>
+        </div>
+      `).join('');
+      document.querySelectorAll('.read-story').forEach(btn => btn.addEventListener('click', () => showToast('🏆 Full success story coming soon!')));
+    }
+  }
+
+  function renderCarousel() {
+    const container = document.getElementById('carouselTrack');
+    if (container) {
+      container.innerHTML = broadcasts.map(b => `
+        <div class="carousel-card" style="width: 300px; background: rgba(10,12,18,0.8); border-radius: 1.5rem; overflow: hidden; border: 1px solid rgba(0,255,200,0.3); transition: all 0.3s; white-space: normal; display: inline-block; vertical-align: top;">
+          <img class="card-img" src="${b.img}" alt="${b.title}" style="width: 100%; height: 180px; object-fit: cover;">
+          <div class="card-content" style="padding: 1rem;">
+            <h3>${b.title}</h3>
+            <p class="ellipsis" style="color: #b0b0c0; font-size: 0.9rem; margin: 0.5rem 0; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">${truncateText(b.desc, 18)}</p>
+            <button class="btn-primary watch-broadcast" style="margin-top: 10px; width: 100%; padding: 8px;">View Here →</button>
+          </div>
+        </div>
+      `).join('');
+      document.querySelectorAll('.watch-broadcast').forEach(btn => btn.addEventListener('click', () => showToast('📺 Broadcast replay available soon!')));
+    }
+  }
+
+  // Toast function for notifications
+  function showToast(msg) {
+    let toast = document.getElementById('toastMsg');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'toastMsg';
+      toast.className = 'glass-card';
+      toast.style.position = 'fixed';
+      toast.style.bottom = '20px';
+      toast.style.right = '20px';
+      toast.style.padding = '12px 20px';
+      toast.style.zIndex = '10000';
+      toast.style.borderLeft = '4px solid #00ffc3';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = `<i class="fas fa-info-circle"></i> ${msg}`;
+    toast.style.display = 'block';
+    setTimeout(() => toast.style.display = 'none', 4000);
+  }
+
+  // Initialize all sections
+  renderResources();
+  renderArticles();
+  renderStories();
+  renderCarousel();
+
+  // Carousel auto-scroll
+  const carousel = document.querySelector('.carousel-container');
+  let scrollInterval;
+  function startAutoScroll() {
+    if (scrollInterval) clearInterval(scrollInterval);
+    scrollInterval = setInterval(() => {
+      if (carousel && !carousel.matches(':hover')) {
+        carousel.scrollLeft += 4;
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+          carousel.scrollLeft = 0;
+        }
+      }
+    }, 30);
+  }
+  function stopAutoScroll() {
+    if (scrollInterval) clearInterval(scrollInterval);
+    scrollInterval = null;
+  }
+  if (carousel) {
+    carousel.addEventListener('mouseenter', stopAutoScroll);
+    carousel.addEventListener('mouseleave', startAutoScroll);
+    startAutoScroll();
+  }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
